@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<rules>
+  <rules name="selector-template" hidden="true">
+    <theme name="home" href="null" if-content="false()"/>
+    <theme name="blog" href="null" if-content="false()"/>
+    <theme name="page" href="null" if-content="false()"/>
+    <theme name="single" href="null" if-content="false()"/>
+    <theme name="archive" href="null" if-content="false()"/>
+    <theme name="error404" href="null" if-content="false()"/>
+    <theme name="search-results" href="null" if-content="false()"/>
+    <theme name="default" href="theme/coalescence.html"/>
+  </rules>
+  <rules name="global-hidden" hidden="true">
+    <drop theme="/html/head/title"/>
+    <after theme-children="/html/head" content="/html/head/*"/>
+  </rules>
+  <rules name="wp-admin-bar" hidden="true">
+    <after theme-children="/html/body" content="//link[@id='admin-bar-css']"/>
+    <after theme-children="/html/body" content="//div[@id='wpadminbar']"/>
+  </rules>
+  <rules name="wp-plugins" hidden="true">
+    <after theme-children="/html/body" content="/html/body/footer/link"/>
+    <after theme-children="/html/body" content="/html/body/footer/object"/>
+    <after theme-children="/html/body" content="/html/body/footer/script"/>
+  </rules>
+  <rules name="global">
+  </rules>
+  <rules name="template-home" if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' home ')]">
+  </rules>
+  <rules name="template-blog" if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' blog ')]">
+  </rules>
+  <rules name="template-page" if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' page ')]">
+  </rules>
+  <rules name="template-single" if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' single ')]">
+  </rules>
+  <rules name="template-archive" if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' archive ')]">
+  </rules>
+  <rules name="template-error404" if-content="//body[contains(concat(' ', normalize-space(@class), ' '), ' error404 ')]">
+  </rules>
+</rules>

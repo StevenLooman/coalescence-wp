@@ -1,0 +1,73 @@
+.coalescence_config .data {
+    display: none;
+}
+
+.coalescence_config .group {
+    margin-bottom: 1em;
+}
+
+.coalescence_config .half-width {
+    width: 49%;
+    display: inline-block;
+}
+
+.coalescence_config .full-width {
+    width: 100%;
+    display: inline-block;
+}
+
+.coalescence_config .selector {
+    min-height: 400px;
+}
+
+.coalescence_config label {
+    display: inline-block;
+    min-width: 100px;
+}
+
+.coalescence_config .xpath_expr .error {
+    border: 1px solid red;
+}
+
+.coalescence_config .xpath_expr input {
+    width: 75%;
+}
+
+.coalescence_config .rule_tree .rule {
+    border: 1px solid black;
+    width: 150px;
+}
+
+.coalescence_config .rule_tree td {
+    border: 1px solid black;
+    min-width: 300px;
+}
+
+.coalescence_config .rules td.type {
+    min-width: 50px;
+}
+
+.coalescence_config .rules td.actions {
+    min-width: 150px;
+}
+
+.coalescence_config .rules .selected td {
+    border: 1px solid yellow;
+}
+
+.coalescence_config .tab-list {
+    border-bottom: solid 1px black;
+}
+
+.coalescence_config .tab-head  {
+    display: inline-block;
+    border: solid 1px black;
+    margin-bottom: -1px;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+}
+
+.coalescence_config .tab-active {
+    background-color: #DDD;
+    border-bottom: solid 1px transparent;
+}
